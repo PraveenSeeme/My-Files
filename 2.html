@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+body 
+{
+background-image:url("C:/Users/prave/OneDrive/Desktop/Demo/wallpaperflare.com_wallpaper.jpg");
+}
+form
+{
+border-style:solid;
+border-width:5px;
+border-color:black;
+background-color:white;
+width:50%;
+text-align:center;
+padding-top:50px;
+padding-bottom:50px;
+margin-left:300px;
+margin-top:250px;
+color:red;
+font-size:20px;
+}
+form:hover
+{
+background-color:yellow;
+}
+</style>
+
+<script>
+function onSubmit(){
+alert("Hello User");
+
+var ar=document.getElementsByName("gender");
+for(var i=0; i<ar.length; i++)
+{
+if(ar[i].checked)
+{
+document.write("Entered Details Are: "+ar[i].value);
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="one">
+<input type="radio" name="gender" value="Male">Male</br>
+<input type="radio" name="gender" value="Female">Female</br>
+<input type="radio" name="gender" value="Others">Others</br>
+<button type="button" onClick="onSubmit()">Submit</button>
+</form>
+</body>
+</html>
